@@ -1,0 +1,157 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(167, 167, 167);
+    margin: auto;
+}
+
+nav {
+    display: inline-block;
+    margin: auto;
+    margin-top: 1rem;
+    width: fit-content;
+    padding: 200px;
+    transition: all .2s ease-in-out;
+    background-color: rgb(214, 207, 221);
+    box-shadow: 1px 1px 3px #554e55;
+
+}
+
+nav a:hover {
+    box-shadow: 1px 1px 3px #554e55;
+
+}
+
+#main {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: fit-content;
+    background-color: rgb(236, 230, 241);
+    box-shadow: 1px 1px 3px #554e55;
+
+}
+
+.card {
+    border-radius: 0;
+    margin: 0.5rem;
+    padding: 0;
+}
+
+.card-title {
+    color: rgb(230, 202, 233);
+}
+
+.card-text {
+    color: rgb(255, 255, 255);
+}
+
+.col {
+    padding: 0;
+    margin: auto;
+    width: fit-content;
+}
+
+.thumbnail {
+    max-width: 15rem;
+}
+
+.card-img {
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 0;
+}
+
+.row {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 0px;
+    width: fit-content;
+}
+
+.card-img:hover {
+    opacity: 70%;
+    box-shadow: 3px 3px 3px #554e55;
+}
+
+
+
+#logoimg {
+    height: 3rem;
+}
+
+footer a {
+    text-align: center;
+    display: inline;
+    font-weight: bolder;
+    font-size: larger;
+    transition: all .2s ease-in-out;
+}
+
+footer {
+    background-color: rgb(123, 119, 128);
+    width: 100%;
+    font-size: small;
+}
+
+.foot-link {
+    color: rgb(0, 0, 0);
+    font-size: small;
+    padding: 1rem;
+    opacity: 50%;
+}
+
+.foot-link:hover {
+    opacity: 100%;
+}
+
+.socicon {
+    height: 2rem;
+    padding: 0%;
+    opacity: 50%;
+}
+
+.socicon:hover {
+    opacity: 100%;
+}
+
+@media only screen and (max-width: 815px) {
+    .thumbnail {
+        min-width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 546px) {
+    .thumbnail {
+        min-width: 100%;
+    }
+
+    #main {
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .row {
+        width: 95%;
+        display: block;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .col {
+
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card {
+        margin: 0;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        padding: 0;
+    }
+}

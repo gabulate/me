@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/bicho_icon.png">
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <title>Gabriel Ulate</title>
+
+    <!-- Imports JQuery and loads navbar and footer from files -->
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <script>
+        $(function () {
+            $("#navbar").load("html/navbar.html");
+            $("#footer").load("html/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div id="main">
+        <div class="row">
+
+            <div class="col">
+                <div class="card bg-dark text-white thumbnail">
+                    <a href="html/Art.html">
+                        <img src="img/Art.jpg" class="card-img" alt="Art">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Art gallery</h5>
+                            <p class="card-text">Some of my art.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card bg-dark text-white thumbnail">
+                    <a href="html/CV.html">
+                        <img src="img/CV.jpg" class="card-img" alt="About">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">About</h5>
+                            <p class="card-text">Who am I?</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-dark text-white thumbnail">
+                    <a href="html/Art.html">
+                        <img src="img/Art.jpg" class="card-img" alt="Art">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Projects</h5>
+                            <p class="card-text">Stuff I've worked on, mostly unfinished.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card bg-dark text-white thumbnail">
+                    <a href="html/Art.html">
+                        <img src="img/Contact.jpg" class="card-img" alt="Art">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Contact</h5>
+                            <p class="card-text">Ways you can reach me!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
