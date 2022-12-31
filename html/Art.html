@@ -1,1 +1,64 @@
-art
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/bicho_icon.png">
+
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <title>Gabriel Ulate</title>
+
+    <!-- Imports JQuery and loads navbar and footer from files -->
+    <script src="../js/jquery-3.3.1.js"></script>
+
+    <script>
+        $(function () {
+            $("#navbar").load("../html/navbar.html");
+            $("#footer").load("../html/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div id="main">
+        <div class="card">
+            <div class="row">
+
+                <div class="col">
+                    <div class="card bg-dark text-white thumbnail">
+                        <a href="html/Art.html">
+                            <img src="../img/Art.jpg" class="card-img" alt="Art">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <p class="card-text">Drawing of a girl with an umbrella.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="row">
+
+                <div class="col">
+                    <p class="card-text">Drawing of a girl with an umbrella.</p>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark text-white thumbnail">
+                        <a href="html/Art.html">
+                            <img src="../img/Art.jpg" class="card-img" alt="Art">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
