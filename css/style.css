@@ -109,7 +109,7 @@ nav a:hover {
     height: 10rem;
     cursor: pointer;
     object-fit: cover;
-    
+
 }
 
 .card-img {
@@ -127,6 +127,29 @@ nav a:hover {
 .card-img:hover {
     opacity: 70%;
     box-shadow: 3px 3px 3px #554e55;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.modal-header {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: none;
+}
+
+.carouselImg {
+    max-width: 90vw;
+    max-height: 90vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: scale-down;
 }
 
 #logoimg {
@@ -167,6 +190,15 @@ footer {
 .socicon:hover {
     opacity: 100%;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .carousel {
+        top: 20%;
+    }
+
+}
+
 
 @media only screen and (max-width: 400px) {
     .index-option {
