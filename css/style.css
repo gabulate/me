@@ -45,8 +45,10 @@ nav a:hover {
 #main {
     margin: auto;
     margin-top: 2rem;
+    padding: 0.3rem;
     margin-bottom: 2rem;
     width: fit-content;
+    max-width: 80%;
     background-color: rgba(236, 230, 241, 0.445);
     box-shadow: 1px 1px 3px #554e55;
 }
@@ -106,10 +108,9 @@ nav a:hover {
 
 .thumbnail img {
     width: 100%;
-    height: 10rem;
+    height: 15rem;
     cursor: pointer;
     object-fit: cover;
-
 }
 
 .card-img {
@@ -151,6 +152,19 @@ nav a:hover {
     margin-right: auto;
     object-fit: scale-down;
 }
+
+.description {
+    margin-top: auto;
+}
+
+.project {
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 50rem;
+    width: fit-content;
+    background-color: rgba(114, 114, 114, 0.425);
+}
+
 
 #logoimg {
     height: 3rem;
@@ -197,6 +211,12 @@ footer {
         top: 20%;
     }
 
+    #main {
+        max-width: 95%;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 
 
@@ -217,8 +237,17 @@ footer {
         cursor: pointer;
     }
 
+    .project {
+        margin: 1rem 0;
+        padding: 1rem 0;
+        min-width: 100%;
+        height: 100%;
+        padding: auto;
+    }
+
     #main {
         width: 100%;
+        max-width: none;
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
