@@ -7,6 +7,7 @@ body {
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     margin: auto;
 }
 
@@ -48,9 +49,22 @@ nav a:hover {
     padding: 0.3rem;
     margin-bottom: 2rem;
     width: fit-content;
-    max-width: 80%;
+    max-width: 45rem;
     background-color: rgba(236, 230, 241, 0.445);
     box-shadow: 1px 1px 3px #554e55;
+}
+
+.pageTitle{
+    text-align: center;
+}
+
+.paragraph{
+    padding: 1rem 2rem;
+}
+
+
+p{
+    text-align: justify;
 }
 
 .card {
@@ -158,11 +172,35 @@ nav a:hover {
 }
 
 .project {
-    margin: 1rem;
+    margin-bottom: 1rem;
     padding: 1rem;
-    max-width: 50rem;
+    max-width: 100%;
     width: fit-content;
-    background-color: rgba(114, 114, 114, 0.425);
+    background-color: #bbb7bb4f;
+}
+
+.nav-tabs {
+    border-color: #ffffff00;
+
+}
+
+.nav-tabs .nav-item .nav-link {
+    background-color: #8579858e;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-color: #00000000;
+    margin-left: 3px;
+    color: black;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    color: black !important;
+    background-color:  #7467748e !important;
+}
+
+.tab-content {
+    background-color: #7467748e ;
+    padding: 1rem;
 }
 
 
