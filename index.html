@@ -15,60 +15,92 @@
 
     <script>
         $(function () {
+            $("#navbar").load("navbar.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <script>
+        $(function () {
             $("#footer").load("footer.html");
         });
     </script>
 </head>
 
 <body>
-    <header>
-        <h1>~Gabriel Ulate~</h1>
-        artist and developer, sort of.
-    </header>
+
+    <div id="navbar"></div>
 
     <div id="main">
-        <div class="row">
-            <div class="col">
-                <div class="card bg-dark text-white index-option">
-                    <a href="Art.html">
-                        <img src="img/Art.jpg" class="card-img" alt="Art">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Art gallery</h5>
-                            <p class="card-text">Some of my art.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card bg-dark text-white index-option">
-                    <a href="CV.html">
-                        <img src="img/CV.jpg" class="card-img" alt="About">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">About</h5>
-                            <p class="card-text">Who am I?</p>
-                        </div>
-                    </a>
-                </div>
+        <div id="name">
+            <img src="img/me.jpg" class="picture" alt="Me">
+            <div>
+                <h2>Gabriel Ulate Moreira.</h2>
+                <h3>Software Engineer</h3>
             </div>
-            <div class="col">
-                <div class="card bg-dark text-white index-option">
-                    <a href="Projects.html">
-                        <img src="img/Projects.jpg" class="card-img" alt="Art">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Projects</h5>
-                            <p class="card-text">Stuff I've worked on, mostly unfinished.</p>
-                        </div>
-                    </a>
+        </div>
+        <hr>
+        <div id="CV">
+            <div id="aside">
+
+                <div class="paragraph">
+                    <h4>Profile</h4>
+                    Software Engineering Student at Universidad Técnica Nacional and beginner <a href="Art.html">artist</a>.
                 </div>
-                <div class="card bg-dark text-white index-option">
-                    <a href="Contact.html">
-                        <img src="img/Contact.jpg" class="card-img" alt="Art">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Contact</h5>
-                            <p class="card-text">Ways you can reach me!</p>
-                        </div>
-                    </a>
+                <br>
+                <div class="paragraph">
+                    <h4>Contact</h4>
+                    <b>E-Mail:</b>
+                    <br>
+                    GaUlateMoreira@gmail.com
+                    <br>
+                    <b>Phone number:</b>
+                    <br>
+                    (+506) 8943 4554
+                    <br>
+                    <b>LinkedIn:</b>
+                    <br>
+                    <a href="linkedin.com/in/gabulate">linkedin.com/in/gabulate</a>
+                    <br><br>
                 </div>
             </div>
 
+            <div id="article">
+                <div class="paragraph">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>Software Engineering Diploma from Universidad Técnica Nacional.</li>
+                        <li>Currently getting a Bachelor's degree.</li>
+                    </ul>
+                </div>
+
+                <div class="paragraph">
+                    <h3>Experience</h3>
+                    <ul>
+                        <li>Worked as a interviewer for the Costa Rican National Census on 2022.</li>
+                        <li>Participated on Global Game Jam 2023 UCreativa+Frame 3 Studio.</li>
+                    </ul>
+                </div>
+
+                <div class="paragraph">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Experienced in C#, Java and SQL.</li>
+                        <li>Experienced in Web Design.</li>
+                        <li>Digital illustration.</li>
+                    </ul>
+                </div>
+
+                <div class="paragraph">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Native Spanish speaker.</li>
+                        <li>C1 English level.</li>
+                        <li>Learning Portuguese.</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
 
     </div>
