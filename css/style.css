@@ -113,13 +113,14 @@ p {
 }
 
 .card-title {
-    color: rgb(163, 115, 168);
+    color: rgb(41, 20, 53);
     pointer-events: none;
+    
 }
 
 .card-text {
     pointer-events: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .col {
@@ -143,7 +144,7 @@ p {
 
 .project-option {
     width: 45%;
-    cursor: pointer;
+    margin-bottom: 2rem;
 }
 
 .thumbnail {
