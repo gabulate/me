@@ -198,11 +198,12 @@ p {
 .modal-header {
     background-color: rgba(0, 0, 0, 0);
     border-bottom: none;
+    height: 1rem;
 }
 
 .carouselImg {
-    max-width: 90vw;
-    max-height: 90vh;
+    max-width: 100vw;
+    max-height: 100vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -312,8 +313,30 @@ footer {
         border-top: 1px solid #6d6d6d;
     }
     
-    .carousel {
-        top: 20%;
+    .thumbnail img {
+        min-width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .col-md-auto {
+        padding: 0;
+        margin: auto;
+        margin-top: 0;
+        width: 45%;
+    }
+
+    .thumbnail {
+        min-width: 100%;
+        display: flexbox;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .modal-header {
+        background-color: rgba(0, 0, 0, 0);
+        border-bottom: none;
+        height: max-content;
     }
 
     #main {
