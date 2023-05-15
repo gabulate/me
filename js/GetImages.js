@@ -1,23 +1,40 @@
-//Function that displays all of the images placed in the galley folder
-//so I don't have to add changes to the html each time I add want to add
-//a new drawing
 
-var folder = "/img/gallery/";
+var folder = "img/gallery/";
+var i = 1;
+while (i <= 30) {
 
-$.ajax({
-    url : folder,
-    success: function (data) {
-        $(data).find("a").attr("href", function (i, val) {
-            if(val.length > 12){
-                $("#gallery").append(
-                     "<div class='col-md-auto'>" +
-                    "<div class='thumbnail' data-bs-toggle='modal' data-bs-target='#galleryModal'>" +
-                        "<img src='" + val + "' data-bs-target='#carousel' data-bs-slide-to='0'>" +
-                    "</div>" +
-                "</div>"
-                );
-            }
-        });
-        ShowImage();
+    var http = new XMLHttpRequest()
+    http.open('HEAD', folder + i + ".jpg", false)
+    http.send()
+    if (http.status === 200) {
+
+        $("#gallery").append(
+            "<div class='col-md-auto'>" +
+            "<div class='thumbnail' data-bs-toggle='modal' data-bs-target='#galleryModal'>" +
+            "<img src='" + folder + i + ".jpg" + "' data-bs-target='#carousel' data-bs-slide-to='0'>" +
+            "</div>" +
+            "</div>"
+        );
+    } else {
+        i = 99999;
     }
-});
+
+    i++;
+}
+
+
+function ShowImage() {
+    const highlight = document.querySelector('.carouselImg');
+    const thumbnails = document.querySelectorAll('.thumbnail img');
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener("click", function () {
+            const source = this.src;
+            highlight.src = source;
+            console.log(thumbnail);
+        })
+    })
+}
+
+ShowImage();
+
