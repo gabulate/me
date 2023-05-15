@@ -2,7 +2,7 @@
 //so I don't have to add changes to the html each time I add want to add
 //a new drawing
 
-var folder = "../img/gallery/";
+var folder = "me/img/gallery/";
 
 $.ajax({
     url : folder,
