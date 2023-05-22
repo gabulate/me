@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/bicho_icon.png" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/bicho_icon.png">
-
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
     <title>Art - Gabriel Ulate</title>
 
     <!-- Imports JQuery and loads navbar and footer from files -->
     <script src="js/jquery-3.3.1.js"></script>
 
     <script>
-        $(function () {
-            $("#navbar").load("navbar.html");
-            $("#footer").load("footer.html");
-        });
+      $(function () {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+      });
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="navbar"></div>
 
     <div id="main">
+      <h1 class="pageTitle">Art portfolio</h1>
 
-        <h1 class="pageTitle">Art portfolio</h1>
+      <div class="paragraph">
+        <p>
+          I'm not mainly an artist, I draw mostly as a hobby, but I'm really
+          proud about how these illustrations turned out and I like to show them
+          off. If you want to see some process videos you can follow my
+          <a href="https://www.instagram.com/dibujabos/" target="_blank"
+            >art Instagram account</a
+          >.
+          <br />
+          <br />
+          Art is probably the most rewarding hobby there is, it involves a lot
+          of creativity, observation and decision making. It gives you infinite
+          creative expression and something nice to look at when you finish a
+          piece. I think everyone should try it, having a creative outlet really
+          opens your mind.
+        </p>
+      </div>
 
-        <div class="paragraph">
-            <p>
-                I'm not mainly an artist, I draw mostly as a hobby, but I'm really proud about how these illustrations
-                turned out and I like to show them off.
-                Art is probably the most rewarding hobby there is, I think everyone should try it.
-            </p>
-        </div>
-
-        <div class="container">
-            <div class="row row-cols-4 justify-content-center" id="gallery">
-                
-            </div>
-        </div>
-
+      <div class="container">
+        <div class="row row-cols-4 justify-content-center" id="gallery"></div>
+      </div>
     </div>
 
     <!-- FullScreen Modal with carousel inside -->
     <div class="modal" id="galleryModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                        style="filter: brightness(0) invert(1);">
-                    </button>
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              style="filter: brightness(0) invert(1)"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="" class="carouselImg" />
                 </div>
-                <div class="modal-body">
-                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="" class="carouselImg">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="footer"></div>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/GetImages.js"></script>
     <script src="js/ShowImage.js"></script>
-
-</body>
-
+  </body>
 </html>
