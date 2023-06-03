@@ -1,92 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XMW896EZMG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/bicho_icon.png">
+      gtag("config", "G-XMW896EZMG");
+    </script>
 
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/bicho_icon.png" />
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
     <title>Projects - Gabriel Ulate</title>
-
 
     <!-- Imports JQuery and loads navbar and footer from files -->
     <script src="js/jquery-3.3.1.js"></script>
 
     <script>
-        $(function () {
-            $("#navbar").load("navbar.html");
-            $("#footer").load("footer.html");
-        });
+      $(function () {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+      });
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="navbar"></div>
 
     <div id="main">
-        <h1 class="pageTitle">Projects</h1>
+      <h1 class="pageTitle">Projects</h1>
 
-        <div class="paragraph">
-            <h1>NONE OF THIS PAGES LEAD ANYWHERE YET</h1>
-            <h1>WHY ARE YOU SEEING THIS</h1>
-            <p>
-                On this page you will find my programming projects. This have been made using different tools and
-                programming laguages such as: Visual Studio, SQL Server, C#, Java and more.
-            </p>
+      <div class="paragraph">
+        <h1>NONE OF THIS PAGES LEAD ANYWHERE YET</h1>
+        <h1>WHY ARE YOU SEEING THIS</h1>
+        <p>
+          On this page you will find my programming projects. This have been
+          made using different tools and programming laguages such as: Visual
+          Studio, SQL Server, C#, Java and more.
+        </p>
+      </div>
+
+      <div class="row row-cols-4 justify-content-center">
+        <div class="project-option">
+          <div class="card bg-dark text-white">
+            <a href="Projects/CarDealership.html">
+              <img
+                src="img/Projects/Progra2/Progra2_LogIn.PNG"
+                class="card-img"
+                alt="Car dealership app"
+              />
+            </a>
+          </div>
+          <h5 class="card-title">Car dealership</h5>
+          <p class="card-text">App that simulates buying cars.</p>
         </div>
 
+        <div class="project-option">
+          <div class="card bg-dark text-white">
+            <a href="Projects/CarDealership.html">
+              <img
+                src="img/Projects/Progra3/Progra3_Pregunta.jpg"
+                class="card-img"
+                alt="Car dealership app"
+              />
+            </a>
+          </div>
+          <h5 class="card-title">Test Maker App</h5>
+          <p class="card-text">
+            App that lets you create exams and apply them.
+          </p>
+        </div>
+      </div>
 
-        <div class="row row-cols-4 justify-content-center">
-            <div class="project-option">
-                <div class="card bg-dark text-white ">
-                    <a href="Projects/CarDealership.html">
-                        <img src="img/Projects/Progra2/Progra2_LogIn.PNG" class="card-img" alt="Car dealership app">
-                    </a>
-                </div>
-                <h5 class="card-title">Car dealership</h5>
-                <p class="card-text">App that simulates buying cars.</p>
-            </div>
-
-            <div class="project-option">
-                <div class="card bg-dark text-white ">
-                    <a href="Projects/CarDealership.html">
-                        <img src="img/Projects/Progra3/Progra3_Pregunta.jpg" class="card-img" alt="Car dealership app">
-                    </a>
-                </div>
-                <h5 class="card-title">Test Maker App</h5>
-                <p class="card-text">App that lets you create exams and apply them.</p>
-            </div>
+      <div class="row row-cols-4 justify-content-center">
+        <div class="project-option">
+          <div class="card bg-dark text-white">
+            <a href="Projects/CarDealership.html">
+              <img
+                src="img/Projects/Progra4/Progra4_Admin.jpg"
+                class="card-img"
+                alt="Car dealership app"
+              />
+            </a>
+          </div>
+          <h5 class="card-title">Payroll calculator</h5>
+          <p class="card-text">
+            App that calculates employee's salary based on multiple factors.
+          </p>
         </div>
 
-        <div class="row row-cols-4 justify-content-center">
-            <div class="project-option">
-                <div class="card bg-dark text-white ">
-                    <a href="Projects/CarDealership.html">
-                        <img src="img/Projects/Progra4/Progra4_Admin.jpg" class="card-img" alt="Car dealership app">
-                    </a>
-                </div>
-                <h5 class="card-title">Payroll calculator</h5>
-                <p class="card-text">App that calculates employee's salary based on multiple factors.</p>
-            </div>
-
-            <div class="project-option">
-                <div class="card bg-dark text-white ">
-                    <a href="Projects/CarDealership.html">
-                        <img src="img/Projects/Progra2/Progra2_LogIn.PNG" class="card-img" alt="Car dealership app">
-                    </a>
-                </div>
-                <h5 class="card-title">Jane Doe Interactive</h5>
-                <p class="card-text">Website to administrate condos.</p>
-            </div>
+        <div class="project-option">
+          <div class="card bg-dark text-white">
+            <a href="Projects/CarDealership.html">
+              <img
+                src="img/Projects/Progra2/Progra2_LogIn.PNG"
+                class="card-img"
+                alt="Car dealership app"
+              />
+            </a>
+          </div>
+          <h5 class="card-title">Jane Doe Interactive</h5>
+          <p class="card-text">Website to administrate condos.</p>
         </div>
+      </div>
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/ShowImage.js"></script>
 
     <div id="footer"></div>
-</body>
-
+  </body>
 </html>
