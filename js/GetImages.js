@@ -16,10 +16,12 @@ function LoadImages (i) {
                 "</div>" +
                 "</div>"
             );
+            document.getElementById("Loading").innerHTML = "Loading... "+ i;
             
             LoadImages(i+1)
           } else {
             ShowImage();
+            document.getElementById("Loading").innerHTML = "";
           }
         }
       };
