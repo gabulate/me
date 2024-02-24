@@ -1,0 +1,212 @@
+Seller dashboard, admin dashboard
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/bicho_icon.png" />
+
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+    <title>Projects - Gabriel Ulate</title>
+
+    <!-- Imports JQuery and loads navbar and footer from files -->
+    <script src="../js/jquery-3.3.1.js"></script>
+    <!-- Imports JQuery and loads navbar and footer from files -->
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <div id="main">
+      <h1 class="pageTitle">Jake Doe's Music & Merch</h1>
+      <h5 class="pageTitle">Co-Authored by Melanny Vargas</h5>
+      <br />
+      <br />
+
+      <div class="paragraph" id="gallery">
+        <p>
+          This application is an ECommerce / MarketPlace type of website, themed
+          for music products. <br />
+          It was made for a programming course where we had to create a website
+          with open source tools using Angular for the front-end, a Node.js
+          back-end server and MySQL with Prisma ORM as database.
+        </p>
+        <p>
+          The users are shown a grid of available products to purchase. These
+          can be filtered by category and sorted by price, or the user can type
+          in the search bar to look up a specific product.
+        </p>
+
+        <!--Openable Image-->
+        <div
+          class="thumbnail"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          style="width: 90%; max-width: 90%; margin: auto"
+        >
+          <img
+            src="img/Projects/JakeDoes/JakeDoesProducts.png"
+            alt="A grid of available music products."
+            data-bs-target="#carousel"
+            data-bs-slide-to="0"
+            style="height: max-content; object-fit: contain"
+          />
+        </div>
+
+        <br />
+        <p>
+          The product view shows the selected product with more detail,
+          displaying multiple images and information such as the item's
+          description, category, seller, available quantity and condition. On
+          the side is a list of similar products the user might be interested
+          in.
+          <br />
+          The user has the option to add the product to their cart and procced
+          with the purchase.
+        </p>
+
+        <!--Openable Image-->
+        <div
+          class="thumbnail"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          style="width: 90%; max-width: 90%; margin: auto"
+        >
+          <img
+            src="img/Projects/JakeDoes/JakeDoesProductView.png"
+            alt="A grid of available music products."
+            data-bs-target="#carousel"
+            data-bs-slide-to="0"
+            style="height: max-content; object-fit: contain"
+          />
+        </div>
+
+        <br />
+        <p>
+          Further into the product's page, the user can see comments and
+          questions made by other users and is given the option to make one as
+          well. The seller can respond to these comments and they will be shown
+          to everyone.
+        </p>
+
+        <!--Openable Image-->
+        <div
+          class="thumbnail"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          style="width: 90%; max-width: 90%; margin: auto"
+        >
+          <img
+            src="img/Projects/JakeDoes/JakeDoesComments.png"
+            alt="A grid of available music products."
+            data-bs-target="#carousel"
+            data-bs-slide-to="0"
+            style="height: max-content; object-fit: contain"
+          />
+        </div>
+        <br />
+
+
+        <p>
+          Sellers and administrators can look at a dashboard that shows a report
+          of their best selling products and a pie chart of user ratings. <br />
+          Administrators can also see a table that displays the best and worst
+          rated sellers.
+        </p>
+
+        <!--Openable Image-->
+        <div
+          class="thumbnail"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          style="width: 90%; max-width: 90%; margin: auto"
+        >
+          <img
+            src="img/Projects/JakeDoes/JakeDoesDashboard.png"
+            alt="A grid of available music products."
+            data-bs-target="#carousel"
+            data-bs-slide-to="0"
+            style="height: max-content; object-fit: contain"
+          />
+        </div>
+
+        <br />
+
+        <p>Features for sellers:</p>
+        <ul>
+          <li>Option to add / edit / remove products.</li>
+          <li>List of all placed orders.</li>
+          <li>Detailed view of placed orders.</li>
+          <li>Option to update orders' state.</li>
+          <li>Option to respond to comments.</li>
+          <li>Dashboard analytics view of products.</li>
+        </ul>
+
+        <p>Features for buyers are:</p>
+        <ul>
+          <li>Product cart.</li>
+          <li>Functionality to save multiple delivery directions.</li>
+          <li>Functionality to save multiple payment methods.</li>
+          <li>Purchase history.</li>
+          <li>Order state information.</li>
+          <li>Product rating.</li>
+        </ul>
+
+        <p>Security features include:</p>
+        <ul>
+          <li>Functionality to register and login users.</li>
+          <li>Encripted passwords.</li>
+          <li>
+            User roles: Some pages can only be seen by users with an specific
+            role.
+          </li>
+          <li>Functionality to de-activate users by administrators.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FullScreen Modal with carousel inside -->
+    <div class="modal" id="galleryModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              style="filter: brightness(0) invert(1)"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="" class="carouselImg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/ShowImage.js"></script>
+    <script>
+      ShowImage();
+    </script>
+  </body>
+</html>
