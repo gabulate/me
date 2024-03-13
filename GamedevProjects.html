@@ -1,4 +1,99 @@
-Tower survivors
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/bicho_icon.png" />
 
-Other:
-Bola que salta, bola saltando sobre ello, endless runner
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>Gamedev Projects - Gabriel Ulate</title>
+
+    <!-- Imports JQuery and loads navbar and footer from files -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!-- Imports JQuery and loads navbar and footer from files -->
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <div id="main">
+      <a class="customButton" href="Projects.html"><<< Go back to projects page</a>
+      <h1 class="pageTitle">Game Development Projects</h1>
+
+      <div class="paragraph">
+        <p>
+          I'm a hobbyist game developer, these are some of the games and prototypes I've worked on.
+        </p>
+      </div>
+
+        <div class="card project-option">
+          <a href="TowerSurvivors.html">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="img/thumbnails/GamedevProjects.jpg"
+                  class="card-img project-thumbnail"
+                  alt="Tower Survivors thumbnail"
+                />
+              </div>
+              <div class="col-md-8">
+                <h5 class="card-title">Tower Survivors</h5>
+                <p class="card-text">
+                  A survivors type game with tower defense elements.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="card project-option">
+            <a href="GamePrototypes.html">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="img/thumbnails/Prototypes.png"
+                    class="card-img project-thumbnail"
+                    alt="Prototypes thumbnail"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h5 class="card-title">Prototypes</h5>
+                  <p class="card-text">
+                    Small game protoypes I've worked on.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        <div class="card project-option">
+          <a href="MiscGames.html">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="img/thumbnails/MiscGames.png"
+                  class="card-img project-thumbnail"
+                  alt="Miscellaneous Games thumbnail"
+                />
+              </div>
+              <div class="col-md-8">
+                <h5 class="card-title">Miscellaneous</h5>
+                <p class="card-text">Some stuff I messed around with and never finished.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
