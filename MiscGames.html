@@ -1,1 +1,267 @@
-endless runner, multiplayer game, el bicho
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/bicho_icon.png" />
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>Projects - Gabriel Ulate</title>
+
+    <!-- Imports JQuery and loads navbar and footer from files -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!-- Imports JQuery and loads navbar and footer from files -->
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <div id="main">
+      <h1 class="pageTitle">Miscelaneous Games</h1>
+      <br />
+
+      <div class="paragraph" id="gallery">
+        <p>
+          These are a few small projects that didn't quite make it to the
+          prototype stage. Often, I would start working on an idea, develop it
+          to some extent, and then abandon it either because it wasn't
+          enjoyable, didn't align with my vision, or because I struggled to
+          progress further with it. I've selected three of these projects to
+          showcase here, ones that I found interesting enough to share.
+        </p>
+
+        <br />
+        <h3 class="pageTitle">Endless runner game</h3>
+        <br />
+
+        <div class="flexy">
+          <div class="lefty">
+            <p>
+              I attempted to create a traditional three lanes endless runner
+              game, where players would need to attack oncoming enemies. I
+              started by implementing a system for generating the infinite map
+              with obstacles randomly distributed across the lanes. However, the
+              side-view perspective, intended to provide clarity on approaching
+              enemies, ironically made it challenging to tell which lane the
+              obstacles were in and my inexperience in programming at the time
+              led me to problems with generating the map.
+            </p>
+          </div>
+
+          <div class="righty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/runnergame/runner game.gif"
+                alt="Shows gameplay of a bare bones three lane runner game, viewed from the side."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <h3 class="pageTitle">Little bug game</h3>
+        <br />
+
+        <div class="flexy">
+          <div class="lefty">
+            <p>
+              I started this little project after watching a video about
+              pathfinding in Unity, feeling inspired to give it a shot. I
+              quickly put together a scene with obstacles, a player controller,
+              and a pathfinding agent. In the game, you control the larger bug,
+              while the smaller one follows you around using the pathfinding
+              algorithm.
+            </p>
+          </div>
+          <div class="righty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/elbicho/bic2.gif"
+                alt="Shows a clip of the game, where a cartoony black bug is moving around some obstacles and a smaller bug is following it around."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="flexy">
+          <div class="lefty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/elbicho/bic1.gif"
+                alt="Shows the smaller bug walking towards the clicked spots and then returning to the bigger bug."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="righty">
+            <p>
+              You can also click anywhere on the screen to send the little bug
+              to that spot. It will autonomously find a path and navigate to the
+              destination without getting stuck on obstacles. Clicking again
+              makes the small bug return to following you. I thought this
+              mechanic could be used to make an interesting puzzle game, but I
+              didn't pursue it further. Perhaps I'll revisit the idea in the
+              future. It was for this project that I originally drew the bug's
+              sprite, at the time I didn't put much thought into it but ended up
+              really liking it and started putting it everywhere I can.
+            </p>
+          </div>
+        </div>
+
+        <br />
+        <h3 class="pageTitle">Multiplayer 2D Shooter</h3>
+        <br />
+
+        <div class="flexy">
+          <div class="lefty">
+            <p>
+              This project was born out of inspiration by a video tutorial on
+              creating peer-to-peer multiplayer lobbies using Steam's API. It
+              sets up a lobby linked to your Steam user, allowing you to invite
+              friends to join. The vision I had for this game was to develop a
+              2D shooter, similar to a mobile game my friends and I used to play
+              called 'Mini Militia'. I wanted the characters to look stylish and
+              have nice animations for moving around and I like what i was able
+              to achieve in that aspect.
+            </p>
+          </div>
+          <div class="righty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/multiplayergame/mgLobby.png"
+                alt="Shows a multiplayer lobby, with only the name of user: 'Salsa Lizano', because I didn't want to get other people to download it and join."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="flexy">
+          <div class="lefty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/multiplayergame/multiplayerGame.gif"
+                alt="Shows a videogame character moving around with some slick animations."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="righty">
+            <p>
+              Unfortunately, making a multiplayer game proved to be much more
+              difficult and it didn't help that at the time I was very
+              inexperienced in programming and game development, testing
+              multiplayer features was complicated while working on my single
+              laptop. It also introduced many complications about server and
+              client coordination, issues with spawning objects, playing
+              animations, movement and aim of the player characters, and more.
+              Despite all that, I want to try it again in the future, with a
+              better understanding of networking.
+            </p>
+          </div>
+        </div>
+
+        <br /><br />
+        <p class="pageTitle">
+          <img
+            src="img/Games/multiplayergame/bichogun.png"
+            alt="I found this image when taking screenshots for this page and found it hilarious. The image depicts a bug from the game mentioned above holding a cartoon gun."
+            data-bs-target="#carousel"
+            data-bs-slide-to="0"
+            style="height: max-content; object-fit: cover"
+          />
+        </p>
+        <p class="pageTitle">thanks for reading</p>
+        <br />
+      </div>
+    </div>
+    <!-- FullScreen Modal with carousel inside -->
+    <div class="modal" id="galleryModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              style="filter: brightness(0) invert(1)"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="" class="carouselImg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/ShowImage.js"></script>
+    <script>
+      ShowImage();
+    </script>
+  </body>
+</html>
