@@ -1,1 +1,399 @@
-Bola que salta, bola saltando sobre ello, Imagink
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/bicho_icon.png" />
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>Game Prototypes - Gabriel Ulate</title>
+
+    <!-- Imports JQuery and loads navbar and footer from files -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!-- Imports JQuery and loads navbar and footer from files -->
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <div id="main">
+      <a class="customButton" href="GamedevProjects.html"
+        ><<< Go back to Gamedev projects page</a
+      >
+      <h1 class="pageTitle">Game Prototypes</h1>
+      <br />
+
+      <div class="paragraph" id="gallery">
+        <p>
+          These are some game prototypes on which I worked but didn't get to
+          release. Working on these projects helped me learn the Unity engine
+          and provided me with strong foundations for my future endeavors.
+        </p>
+
+        <br />
+        <h3 class="pageTitle">Ball that jumps</h3>
+        <br />
+
+        <div class="flexy">
+          <div class="lefty">
+            <p>
+              This is a small game, but it's the first one I've properly
+              finished. After experimenting with the Unity Engine for some time,
+              I made the decision to embark on and complete a small project,
+              complete with a proper title screen, levels, and gameplay loop.
+              <br />
+              <br />
+              At the time I had no skill at drawing and making assets, so the
+              visuals are only made of simple shapes.
+            </p>
+          </div>
+
+          <div class="righty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/BQS/BQS title.gif"
+                alt="Title screen of Bola que salta. A ball jumps around."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="flexy">
+          <div class="lefty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/BQS/BQS level.gif"
+                alt="Gameplay of bola que salta, a ball jumps from one platform to another and arrives at the goal."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="righty">
+            <p>
+              The gameplay is simple: reach the goal marked by a blue rectangle.
+              To move around, you hold the mouse button, causing the ball to
+              rotate. A triangle on the ball indicates the direction. When the
+              player releases the mouse button, the ball jumps in the direction
+              it's pointing. For finer control over rotation, the player can use
+              both mouse buttons. The right-click rotates the ball clockwise,
+              while the left button rotates it counter-clockwise. Holding both
+              buttons keeps the rotation still, allowing the player to 'confirm'
+              their shot.
+            </p>
+          </div>
+        </div>
+
+        <div class="flexy">
+          <div class="lefty">
+            <p>
+              The game ended up featuring a total of 10 levels. The final level
+              resembled a 'Boss fight,' where the player had to reach three
+              different goal markers while avoiding the boss' attacks.
+              <br />
+              <br />
+              This game could have been expanded by adding more levels, but I
+              kept the scope small and considered it finished. I shared the game
+              with some friends, and we had a lot of fun playing it. Little did
+              I know at the time, this game would set me on the path to becoming
+              a hobbyist game developer.
+            </p>
+          </div>
+
+          <div class="righty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/BQS/BQS boss.gif"
+                alt="Title screen of Bola que salta. A ball jumps around."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <h3 class="pageTitle">Ball jumping over it</h3>
+        <br />
+
+        <div class="flexy">
+          <div class="lefty">
+            <p>
+              Some time after finishing 'Ball that jumps', I had an idea for an
+              easy-to-make sequel. Heavily inspired by 'Getting Over It with
+              Bennett Foddy', I began developing a game about climbing a
+              mountain using the movement mechanics from my previous game.
+              <br />
+              <br />
+              A part of the game I wanted to replicate is how punishing it is to
+              miscalculate a movement and falling down to the beginning.
+            </p>
+          </div>
+          <div class="righty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/BJOI/Bjoi 2.gif"
+                alt="Shows gameplay of the ball jumping from one platform to another, then trying to jump over a ramp, failing, and rolling back to where it started."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="flexy">
+          <div class="lefty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/BJOI/Bjoi.gif"
+                alt="Gameplay of Ball jumping over it, the little bug makes an appeareance, although, not so little this time."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="righty">
+            <p>
+              In 'Getting over it' the narrator points out how the level is
+              built from premade assets he just downloaded from the internet,
+              but when put togheter for the game, they formed the world, the
+              mountain for the player to climb.
+              <br />
+              <br />
+              While my game didn't aim to deliver such profound messages as
+              Bennett Foddy's, it did inspire me to utilize my own accumulated
+              'trash' assets. So I fine tuned the phyiscs and controls to make
+              them feel juicier and started building a level made up with
+              various assets and images I had made for other projects.
+            </p>
+          </div>
+        </div>
+
+        <div class="flexy">
+          <div class="lefty">
+            <p>
+              I added elements like moving platforms, fake platforms, effectors
+              and a system to play audio at different points. The mountain
+              consisted of various characters, obstacles, and art I had drawn
+              myself.
+              <br /><br />
+              I built a big portion of the game, but never quite finished the
+              mountain, funnily enough, I didn't have enough trash to make it
+              very long. I may return to it later with way more trash.
+            </p>
+          </div>
+          <div class="righty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/BJOI/Bjoi 1.gif"
+                alt="Shows the ball jumping into a fake platform, then falling."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <h3 class="pageTitle">Imagink</h3>
+        <br />
+
+        <div class="flexy">
+          <div class="lefty">
+            <p>
+              In 2023, a friend who's also passionate about game development,
+              introduced me to a game studio he worked for, T3AMPO, who were
+              looking for a programmer to build a prototype of a game they wanted
+              to make.
+              <br />
+              <br />
+              They had already started development but my friend, who was the
+              previous developer, was needed to work on another project of
+              theirs, so they hired me for approximately two months to assist
+              with the ongoing development.
+            </p>
+          </div>
+          <div class="righty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/Imagink/imagink1.gif"
+                alt="Shows a paper character moving around and attacking a paper enemy."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="flexy">
+          <div class="lefty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/Imagink/imaginkDrawing.gif"
+                alt="The player draws a sword with their mouse and its given to the paper character."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="righty">
+            <p>
+              The game is an 'Adventure platformer that combines intuitive
+              puzzle solving with the power of imagination'. The player has to
+              draw their weapon on a canvas, and different stats are given to it
+              depending on the amount of ink used and number of strokes.
+              <br />
+              <br />
+              On my time working with them I programmed the basis for a combat
+              system, enemy behaviour and the ability to bring drawn objects
+              into the world to solve puzzles.
+            </p>
+          </div>
+        </div>
+
+        <div class="flexy">
+          <div class="lefty">
+            <p>
+              Sadly, I had to leave the development team because I was very busy
+              with university. The studio hired some more programmers and I got
+              to meet them and answer questions about the code. Overall the
+              experience was very enriching.
+              <br />
+              <br />
+              The studio showcased Imagink at GameJam+ Brazil 2023 and secured
+              funding from a sponsor after winning various prizes.
+              <br /><br />
+              They continued development and eventually realeased the game. You
+              can find it on
+              <a href="https://t3ampo.itch.io/imagink" target="_blank">itch.io.</a
+              >
+            </p>
+          </div>
+          <div class="righty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/Imagink/imagink2.gif"
+                alt="Shows the paper character moving around and attacking a bigger paper enemy."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <br /><br />
+      </div>
+    </div>
+    <!-- FullScreen Modal with carousel inside -->
+    <div class="modal" id="galleryModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              style="filter: brightness(0) invert(1)"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="" class="carouselImg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/ShowImage.js"></script>
+    <script>
+      ShowImage();
+    </script>
+  </body>
+</html>
