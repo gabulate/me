@@ -1,1 +1,239 @@
-not done yet
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/bicho_icon.png" />
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>Jane Doe's Condominium - Gabriel Ulate</title>
+
+    <!-- Imports JQuery and loads navbar and footer from files -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!-- Imports JQuery and loads navbar and footer from files -->
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <div id="main">
+      <a class="customButton" href="UniversityProjects.html"
+        ><<< Go back to University projects page</a
+      >
+      <h1 class="pageTitle">Jane Doe's Condominium Manager</h1>
+      <br />
+
+      <div class="paragraph" id="gallery">
+        <p>
+          This application lets a condominium owner manage different aspects
+          like lot ownership, area reservations and maintenance charges. <br />
+          Co-Authored by Melanny Vargas, we made it for a programming course
+          where we had to create a website with the .NET MVC framework and an
+          SQL database with entity framework.
+          <a
+            href="https://github.com/gabulate/Jane-Doe-Interactive"
+            target="_blank"
+            >Link to repository.</a
+          >
+        </p>
+
+        <div class="flexy">
+          <div class="lefty">
+            <p>
+              The users are shown a Home page where they can look at the
+              condominium map, read recent messages written by the administrator
+              and access other parts of the application.
+            </p>
+          </div>
+
+          <div class="righty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Projects/JaneDoes/JaneDoesHome.jpg"
+                alt="A home page with a map."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="flexy">
+          <div class="lefty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 100%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Projects/JaneDoes/JaneDoesMakeReservation.jpg"
+                alt="A form for making a reservation."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: cover"
+              />
+            </div>
+          </div>
+
+          <div class="righty">
+            <p>
+              Members of the community can make reservations of the different
+              available areas. The system checks if the area is open and
+              available at the given date and time.
+            </p>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="flexy">
+          <div class="lefty">
+            <p>
+              The administrators can create different charges and fee plans for
+              services like cleaning and assign them to the homeowners. <br />
+              The homeowners can see a list of their monthly fees and confirm
+              their payment.
+            </p>
+          </div>
+          <div class="righty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Projects/JaneDoes/JaneDoesPropertyCharges.jpg"
+                alt="A list of charges and fees."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="flexy">
+          <div class="lefty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Projects/JaneDoes/JaneDoesIncomeReport.jpg"
+                alt="A dashboard showing monthly income for property charges."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="righty">
+            <p>
+              The administrators can look at a dashboard of their monthly income
+              from property charges.
+            </p>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="flexy">
+          <div class="lefty">
+            <p><b>Features for Homeowners:</b></p>
+            <ul>
+              <li>List of their monthly fees and confirm payment.</li>
+              <li>Make reservations of different areas.</li>
+              <li>List of all their reservations.</li>
+              <li>Option to update orders' state.</li>
+              <li>Report incidents in the condominiums.</li>
+            </ul>
+
+            <p><b>Features for Administrators:</b></p>
+            <ul>
+              <li>
+                Functionality to create fees and assign them to homeowners.
+              </li>
+              <li>List of all fees and report of wich ones have been paid.</li>
+              <li>List of all reservations made by homeowners.</li>
+              <li>List of incidents reported by homeowners.</li>
+              <li>Functionality to assign lots and houses to homeowners.</li>
+              <li>Report of monthly income.</li>
+            </ul>
+          </div>
+          <div class="righty">
+            <p><b>Security features:</b></p>
+            <ul>
+              <li>Functionality to register and login users.</li>
+              <li>Encripted passwords.</li>
+              <li>
+                User roles: Some pages can only be seen by users with an
+                specific role.
+              </li>
+              <li>Functionality to de-activate users by administrators.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FullScreen Modal with carousel inside -->
+    <div class="modal" id="galleryModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              style="filter: brightness(0) invert(1)"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="" class="carouselImg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/ShowImage.js"></script>
+    <script>
+      ShowImage();
+    </script>
+  </body>
+</html>
