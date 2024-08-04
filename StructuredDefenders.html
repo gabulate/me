@@ -40,9 +40,18 @@
     <div id="navbar"></div>
 
     <div id="main">
+      <div class="flexy">
+        <img
+          src="img/Games/Tower Survivors/WideCover.png"
+          alt="Structured Defenders cover art"
+          style="width: 100%"
+        />
+      </div>
+
       <a class="customButton" href="GamedevProjects.html"
         ><<< Go back to Gamedev projects page</a
       >
+
       <h1 class="pageTitle">Structured Defenders</h1>
       <br />
 
@@ -54,33 +63,48 @@
         </p>
 
         <div class="flexy">
-          <div class="lefty">
-            <p>Still in development, will share more soon.</p>
-          </div>
-
-          <div class="righty">
-            <!--Openable Image-->
-            <div
-              class="thumbnail"
-              data-bs-toggle="modal"
-              data-bs-target="#galleryModal"
-              style="width: 90%; max-width: 90%; margin: auto"
-            >
-              <img
-                src="img/Games/Tower Survivors/early footage.gif"
-                alt="early footage"
-                data-bs-target="#carousel"
-                data-bs-slide-to="0"
-                style="height: max-content; object-fit: cover"
-              />
-            </div>
-          </div>
+          <iframe
+            frameborder="0"
+            src="https://itch.io/embed/2759792?linkback=true&amp;bg_color=546470&amp;fg_color=ffffff&amp;link_color=ffffff&amp;border_color=5d9e76"
+            ><a href="https://gabulate.itch.io/structured-defenders"
+              >Structured Defenders by GabUlate</a
+            ></iframe
+          >
+        </div>
+        <br> 
+        <div class="flexy">
+          <iframe
+            style="height: 100%; height: 360px"
+            src="https://www.youtube.com/embed/VqbKy6nQXig"
+            title="Structured Defenders - Trailer"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
 
         <br />
-
+        <br />
         <div class="flexy">
           <div class="lefty">
+            <p>
+              This game was heavily influenced by Vampire Survivors, by Poncle.
+              A game where you slay hordes of enemies with weapons that
+              passively attack on their own while you just walk around collecting
+              XP to get more weapons to slay more enemies. <br />
+              I thought about combining this idea with Tower Defense games,
+              where you place different units that also attack on their own. In
+              typical Tower Defense games, the player has total vision of the
+              playable area and have to make sure the enemies don't reach a
+              certain point or object. But for this game, the enemies go after
+              the player who controls and moves around as a physical character
+              so they have to play around their units and aren't as free to move
+              around the map.
+            </p>
+          </div>
+
+          <div class="righty">
             <!--Openable Image-->
             <div
               class="thumbnail"
@@ -90,7 +114,27 @@
             >
               <img
                 src="img/Games/Tower Survivors/gameplay 1.gif"
-                alt=""
+                alt="A short clip of Structured Defenders gameplay."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="flexy">
+          <div class="lefty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/Tower Survivors/early footage.gif"
+                alt="Depicts early footage of the game."
                 data-bs-target="#carousel"
                 data-bs-slide-to="0"
                 style="height: max-content; object-fit: contain"
@@ -98,13 +142,30 @@
             </div>
           </div>
           <div class="righty">
-            <p>Set to release around july</p>
+            <p>
+              I liked this idea because it was very simple and manageable as a
+              single developer. So I started working on it around November 2023.
+              I developed systems for placing and upgrading structures and
+              passive items that effect the statistics of the placed structures.
+              Each structure and item exists as a Scriptable Object which can be
+              easily modified to set different statistics at different levels.
+            </p>
           </div>
         </div>
 
         <div class="flexy">
           <div class="lefty">
-            <p>why are you here</p>
+            <p>
+              One of the other major systems I had to make was the player
+              leveling up and getting a random list of available items to choose
+              from. This wasn't very complicated but I did have to consider
+              scenarios like not offering passive items that have already been
+              maxed out, if all the passive item slots are filled, only show
+              items that the player already has, not offer structures if the
+              player has 4 or more structures in their inventory, only offer
+              items the player has unlocked and if no items are eligible, the
+              player just gets some extra coins.
+            </p>
           </div>
           <div class="righty">
             <!--Openable Image-->
@@ -115,14 +176,211 @@
               style="width: 90%; max-width: 90%; margin: auto"
             >
               <img
-                src="img/Games/Tower Survivors/rocket launcher aoe.gif"
-                alt="Shows a multiplayer lobby, with only the name of user: 'Salsa Lizano', because I didn't want to get other people to download it and join."
+                src="img/Games/Tower Survivors/TS pawn transformation.gif"
+                alt="A clip of gameplay showing the player leveling up and selecting an item."
                 data-bs-target="#carousel"
                 data-bs-slide-to="0"
                 style="height: max-content; object-fit: contain"
               />
             </div>
           </div>
+        </div>
+
+        <div class="flexy">
+          <div class="lefty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/Tower Survivors/gameplay 3.gif"
+                alt="Shows gameplay of a late stage of the game with a lot of enemies spawning."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="righty">
+            <p>
+              Another major system was the spawning of enemies, in which my game
+              differs a little from Vampire Survivors. For starters, the enemies
+              won't de-spawn (Although there is a limit to the maximum amount of
+              enemies), no matter how far the player gets from them. The order
+              of the enemies is random, but it is divided in waves and will
+              always spawn the same amount of enemies, and the velocity of the
+              spawner will speed up or slow down depending on how the player is
+              doing, so you could last the same amount of time on two matches
+              but have very different scores.
+            </p>
+          </div>
+        </div>
+
+        <div class="flexy">
+          <div class="lefty">
+            <p>
+              The part that definitely took the most time was making all the
+              assets. Every sprite you see in the game was drawn by myself. I
+              went for pixel art to make it simpler and easier to
+              maintain a coherent style. I had previous experience with digital
+              art, but I had never tried pixel art, at least for a project on
+              this scale. The pixel art style also let me get away with making
+              most animations be only 3 or 4 frames. <br />
+              Still, even with these creative restrictions, drawing every sprite
+              was the most time consuming part of this project. I'm no
+              professional artist, but I think the overall aesthetic turned out
+              okay.
+            </p>
+          </div>
+          <div class="righty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/Tower Survivors/Structures.jpg"
+                alt="Shows all the structures available in the final game."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flexy">
+          <div class="lefty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/Tower Survivors/Enemies.jpg"
+                alt="Shows all the enemies that appear in the game."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="righty">
+            <p>
+              For the enemies included in the game (aside from the little bug
+              creatures) I decided to draw inspiration from costa rican and
+              latin-american culture. "Duendes", "La Tulevieja", "El Sisimiqui",
+              "El Padre sin cabeza", "La Llorona" and my personal favorite; "La
+              Segua" do as the enemies that the player has to fight off. <br />
+            </p>
+          </div>
+        </div>
+
+        <div class="flexy">
+          <div class="lefty">
+            <p>
+              There's also different characters that the player can unlock and
+              play as, with the only differences between them being their
+              appearance and their starting item. <br />
+              <br />
+              This game could be endlessly expanded by adding more structures,
+              more characters, more enemies, more levels, more content...
+            </p>
+          </div>
+          <div class="righty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/Tower Survivors/Characters.jpg"
+                alt="Shows all the characters that the player can control."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="flexy">
+          <div class="lefty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/Tower Survivors/gameplay 2.gif"
+                alt="A clip of Structured Defenders gameplay"
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="righty">
+            <p>
+              But after about 6 months of development, I really wanted to move
+              on to other projects, so I decided to wrap up development of new
+              content and polish the game for release. This of course meant
+              cutting ideas and other things I wanted to include, but if I felt
+              that I would never finish the game if I didn't. I also didn't want
+              to be stuck in the same project and end up hating or resenting it,
+              after all, since the beginning I set myself to make something
+              simple, and this is also just my first game!<br />
+            </p>
+          </div>
+        </div>
+
+        <div class="flexy">
+          <div class="lefty">
+            <p>
+              I started development in November 2023 and officially finished it
+              in July 2024 by working on it on my free time. <br> In the end, I
+              learned a lot and even with all the difficulties. I'm proud of
+              this little silly game I managed to make and share with others and
+              it has given me a lot of inspiration for my future projects!
+            </p>
+          </div>
+          <div class="righty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/Tower Survivors/UnitySS.jpg"
+                alt="A screenshot of the project from the unity editor."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
+        <br> <br>
+        <div class="flexy">
+          <iframe
+            frameborder="0"
+            src="https://itch.io/embed/2759792?linkback=true&amp;bg_color=546470&amp;fg_color=ffffff&amp;link_color=ffffff&amp;border_color=5d9e76"
+            ><a href="https://gabulate.itch.io/structured-defenders"
+              >Structured Defenders by GabUlate</a
+            ></iframe
+          >
         </div>
       </div>
     </div>
