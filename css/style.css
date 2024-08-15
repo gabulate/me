@@ -125,6 +125,12 @@ nav a:hover {
   padding: 0.3rem 3rem;
 }
 
+.sidebar{
+  padding: 0.3rem 0.3rem !important;
+
+}
+
+
 p {
   text-align: justify;
 }

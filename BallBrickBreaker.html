@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BX75ZDDPK2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BX75ZDDPK2");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/bicho_icon.png" />
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>Ball Brick Breaker - Gabriel Ulate</title>
+
+    <!-- Imports JQuery and loads navbar and footer from files -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!-- Imports JQuery and loads navbar and footer from files -->
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <div id="main">
+      <div class="flexy">
+        <img
+          src="img/Games/BallBrickBreaker/Card Banner.jpg"
+          alt="Structured Defenders cover art"
+          style="width: 100%"
+        />
+      </div>
+
+      <a class="customButton" href="GamedevProjects.html"
+        ><<< Go back to Gamedev projects page</a
+      >
+
+      <h1 class="pageTitle">Ball Brick Breaker</h1>
+      <br />
+
+      <div class="paragraph" id="gallery">
+        <p>
+          Ball Brick Breaker is a simple rendition of infinite brick breaking
+          for Android!
+        </p>
+
+        <div class="flexy">
+          <iframe
+            frameborder="0"
+            src="https://itch.io/embed/2889753?linkback=true&amp;bg_color=1D1D1D&amp;fg_color=ffffff&amp;link_color=6c94e1&amp;border_color=3d3d3d"
+            ><a href="https://gabulate.itch.io/structured-defenders"
+              >Ball Brick Breaker by GabUlate</a
+            ></iframe
+          >
+        </div>
+        <br />
+        <div class="flexy">
+          <div class="lefty">
+            <p>
+              404 page not done yet! <br> <br>
+              Go to the itch.io page if you want to download the game!
+
+              ...or read about <a href="StructuredDefenders.html">my other game.</a>
+            </p>
+          </div>
+
+          <div class="righty">
+            <!--Openable Image-->
+            <div
+              class="thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#galleryModal"
+              style="width: 90%; max-width: 90%; margin: auto"
+            >
+              <img
+                src="img/Games/BallBrickBreaker/Background image 2.jpg"
+                alt="A short clip of Structured Defenders gameplay."
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                style="height: max-content; object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <div class="flexy">
+          <iframe
+            frameborder="0"
+            src="https://itch.io/embed/2889753?linkback=true&amp;bg_color=1D1D1D&amp;fg_color=ffffff&amp;link_color=6c94e1&amp;border_color=3d3d3d"
+            ><a href="https://gabulate.itch.io/structured-defenders"
+              >Ball Brick Breaker by GabUlate</a
+            ></iframe
+          >
+        </div>
+      </div>
+    </div>
+    <!-- FullScreen Modal with carousel inside -->
+    <div class="modal" id="galleryModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              style="filter: brightness(0) invert(1)"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="" class="carouselImg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/ShowImage.js"></script>
+    <script>
+      ShowImage();
+    </script>
+  </body>
+</html>
