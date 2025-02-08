@@ -6,8 +6,6 @@ function ShowImage() {
         thumbnail.addEventListener("click", function () {
             const source = this.src;
             highlight.src = source;
-            console.log(thumbnail);
-            console.log(source)
         })
     })
 }

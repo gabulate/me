@@ -17,7 +17,10 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Gabriel, Ulate, Moreira, Gamedev, Art, CV, gabulate, Art" />
+    <meta
+      name="keywords"
+      content="Gabriel, Ulate, Moreira, Gamedev, Art, CV, gabulate, Art"
+    />
     <link rel="icon" href="img/bicho_icon.png" />
 
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
@@ -39,62 +42,94 @@
     <div id="navbar"></div>
 
     <div id="main">
-      <a class="customButton" href="Projects.html"><<< Go back to projects page</a>
-      <h1 class="pageTitle">Art portfolio</h1>
+      <h1 class="pageTitle">Art Portfolio</h1>
 
       <div class="paragraph">
         <p>
-          I'm not mainly an artist, I draw mostly as a hobby, but I'm really
-          proud about how these illustrations turned out and I like to show them
-          off. If you want to see some process videos you can follow my
+          Here you will see some of my digital illustrations and art projects.
+          If you want to see more casual posting you can follow my
           <a href="https://www.instagram.com/gabulatedev/" target="_blank"
             >Instagram art account</a
           >.
           <br />
           <br />
-          Art is probably the most rewarding hobby there is, it involves a lot
-          of creativity, observation and decision making. It gives you infinite
-          creative expression and something nice to look at when you finish a
-          piece. I think everyone should try it, having a creative outlet really
-          opens your mind.
+          Drawing is probably the most rewarding hobby there is, it involves a
+          lot of creativity, observation and decision making. It gives you
+          infinite creative expression and something nice to look at when you
+          finish a piece. I think everyone should try it, having a creative
+          outlet really opens your mind.
         </p>
       </div>
 
-      <div class="container">
-        <div class="row row-cols-4 justify-content-center" id="gallery"></div>
-      </div>
-      <div id="Loading">Loading...</div>
-    </div>
-
-    <!-- FullScreen Modal with carousel inside -->
-    <div class="modal" id="galleryModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-              style="filter: brightness(0) invert(1)"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="" class="carouselImg" />
-                </div>
-              </div>
+      <div class="card project-option">
+        <a href="Illustrations.html">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="img/gallery/12.jpg"
+                class="card-img project-thumbnail"
+                alt="illustrations thumbnail"
+              />
+            </div>
+            <div class="col-md-8">
+              <h5 class="card-title">Illustrations</h5>
+              <p class="card-text">
+                Some of my completed digital illustrations. <br />
+                Most of them being from many years ago.
+              </p>
             </div>
           </div>
-        </div>
+        </a>
+      </div>
+
+      <div class="card project-option">
+        <a href="MatoneadoManga-es.html">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="img/thumbnails/matoneado-es.png"
+                class="card-img project-thumbnail"
+                alt="Matoneado manga spanish thumbnail"
+              />
+            </div>
+            <div class="col-md-8">
+              <h5 class="card-title">Un matoneado Manga - Español</h5>
+              <p class="card-text">
+                En este corto proyecto, me di a la tarea de adaptar el cuento de
+                Carlos Salazar Herrera al estilo de comic japonés. <br />
+                Con 5 páginas en total, se puede leer en menos de 10 minutos y
+                da a conocer un pedacito de la literatura costarricense.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card project-option">
+        <a href="MatoneadoManga-en.html">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="img/thumbnails/matoneado-en.png"
+                class="card-img project-thumbnail"
+                alt="Ambushed manga english thumbnail"
+              />
+            </div>
+            <div class="col-md-8">
+              <h5 class="card-title">Ambushed Manga - English</h5>
+              <p class="card-text">
+                Translated to English, on this little project, I gave myself the
+                task of adapting Carlos Salazar Herrera's story to the style of
+                japanese comics. <br />
+                With 5 pages total, it can be read in about 10 minutes and it
+                makes light of a little piece of Costa Rican literature. <br />
+              </p>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
-
     <div id="footer"></div>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/GetImages.js"></script>
-    <script src="js/ShowImage.js"></script>
   </body>
 </html>

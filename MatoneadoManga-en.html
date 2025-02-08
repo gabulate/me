@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BX75ZDDPK2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BX75ZDDPK2");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Gabriel, Ulate, Moreira, Gamedev, Art, CV, gabulate, Art"
+    />
+    <link rel="icon" href="img/bicho_icon.png" />
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>Ambushed - Gabriel Ulate</title>
+
+    <!-- Imports JQuery and loads navbar and footer from files -->
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <div id="main">
+      <a class="customButton" href="Art.html"><<< Go back to Art Portfolio</a>
+      <h1 class="pageTitle">Ambushed</h1>
+
+      <div class="paragraph">
+        <p>
+          This is a small project where I tried to adapt Carlos Salazar
+          Herrera's story into the style of a Japanese manga. Probably the
+          biggest challenge was organizing the different panels to tell the
+          story and writing Gabriel Sánchez's thoughts to convey what was
+          happening in a way that felt faithful to the original tale, since it
+          originally has an omniscient narrator, and the only dialogue in the
+          entire story consists of 3 lines. <br />
+          I tried to recreate the manga style, but the final artwork ended up
+          being more of a mix between cartoon and my own style. <br />
+          The entire project took me about a month. I'm happy with the result
+          and plan to adapt more stories.
+        </p>
+      </div>
+
+      <div class="full-length">
+        <img src="img/matoneado-en/Portada-en.png" />
+        <img src="img/matoneado-en/Indicaciones-en.png" />
+        <img src="img/matoneado-en/Matoneado-page-1-en.png" />
+        <img src="img/matoneado-en/Matoneado-page-2-en.png" />
+        <img src="img/matoneado-en/Matoneado-page-3-en.png" />
+        <img src="img/matoneado-en/Matoneado-page-4-en.png" />
+        <img src="img/matoneado-en/Matoneado-page-5-en.png" />
+        <img src="img/matoneado-en/Sobre el Autor-en.png" />
+      </div>
+    </div>
+
+    <!-- FullScreen Modal with carousel inside -->
+    <div class="modal" id="galleryModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              style="filter: brightness(0) invert(1)"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="" class="carouselImg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ShowImage.js"></script>
+  </body>
+</html>
